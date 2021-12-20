@@ -1,0 +1,63 @@
+@use "@/Styles/themes/themes" as *;
+.form {
+  &__body {
+    background-color: $grey-lighter;
+    border-radius: 6rem 2rem;
+    // margin-bottom: $m-md;
+  }
+
+  // padding: 1px;
+  max-width: 45rem;
+  &__header {
+    text-align: center;
+  }
+
+  &__resolve {
+    margin: $m-sm;
+    text-align: center;
+    opacity: 0;
+    color: $warning;
+    &--valid {
+      color: $success;
+    }
+    &--active {
+      opacity: 1;
+    }
+  }
+  &__search-btn {
+    background-color: $white;
+    color: $black;
+
+    &--invalid {
+      opacity: 0.1;
+    }
+  }
+  &__register-btn {
+    float: left;
+  }
+}
+
+.register {
+  background-color: $grey-lighter;
+  padding: $p-md;
+  &__heading {
+    margin-bottom: $m-md;
+    text-align: center;
+  }
+  &__contact-btns {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+  }
+  &__contact-text {
+    margin-bottom: $m-md;
+    text-align: right;
+  }
+  .whatsapp-btn {
+    svg {
+      color: $success;
+    }
+  }
+}

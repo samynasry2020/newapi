@@ -1,0 +1,27 @@
+@import "@/Styles/themes/themes";
+.partners {
+  padding: $p-md;
+  color: $grey-light;
+
+  &__container {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  &__slider {
+    min-width: 100%;
+    display: flex;
+    animation: sliding 10s linear infinite;
+  }
+
+  &__item {
+    display: flex;
+    min-width: 100%;
+    justify-content: space-around;
+
+    &-img {
+      position: relative;
+      width: 10rem;
+    }
+  }
+}

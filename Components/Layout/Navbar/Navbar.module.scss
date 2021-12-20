@@ -1,0 +1,52 @@
+@use "@/Styles/themes/colors" as *;
+@use "@/Styles/themes/measures" as *;
+.nav {
+  padding: $p-sm;
+
+  &__list {
+    transition: all 0.5s;
+    position: absolute;
+    top: 100%;
+    transform: translateY(-200%);
+    visibility: hidden;
+    background-color: $grey;
+    &--active {
+      visibility: visible;
+      transform: translateY(0);
+    }
+  }
+
+  &__item {
+    margin: 0 $m-md;
+    &:hover {
+      color: lighten($grey-lighter, 15%);
+    }
+    &--active {
+      color: $primary-light;
+      border-bottom: 2px solid $primary;
+      &:hover {
+        color: $primary-light;
+      }
+    }
+  }
+
+  &__switch {
+    display: flex;
+    border: none;
+    background: transparent;
+    color: $primary;
+    font-size: $fs-lg;
+  }
+  @media (min-width: 850px) {
+    &__list {
+      display: flex;
+      position: unset;
+
+      visibility: visible;
+      transform: translateY(0);
+    }
+    &__switch {
+      display: none;
+    }
+  }
+}

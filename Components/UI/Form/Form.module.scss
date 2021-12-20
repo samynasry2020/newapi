@@ -1,0 +1,91 @@
+@use "@/Styles/themes/themes" as *;
+
+// Form
+.form {
+  padding: $p-md;
+  width: 90%;
+  margin: auto;
+  border-radius: $r-lg;
+  background-color: $grey-lighter;
+  &__header {
+    text-align: center;
+    color: $grey-light;
+    font-weight: $fw-xl;
+  }
+  &__footer {
+    padding: $p-md;
+  }
+  &__secondary-btn {
+    float: left;
+  }
+}
+
+// Inputs
+.input {
+  padding: $p-md;
+  width: 100%;
+  color: $grey;
+  &:not(:last-child) {
+    border-bottom: 1px solid $grey;
+  }
+  &__field {
+    border-bottom: 2px solid transparent;
+    display: flex;
+    align-items: center;
+  }
+
+  &__input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    font-size: inherit;
+    outline: none;
+    font-family: inherit;
+  }
+
+  &__label {
+    margin-inline-end: $m-sm;
+    font-size: inherit;
+  }
+
+  &__clear {
+    width: 2.5rem;
+    height: 2.5rem;
+    button {
+      border: none;
+      background-color: transparent;
+    }
+  }
+
+  &__note {
+    min-height: 4.5rem;
+    font-size: 1.6rem;
+  }
+
+  &--valid.input {
+    &--focused .input {
+      &__field {
+        border-bottom: 2px solid $success;
+      }
+      &__note {
+        color: $success;
+      }
+    }
+    .input__flag {
+      color: $success;
+    }
+  }
+  &--invalid.input {
+    &--focused .input {
+      &__field {
+        border-bottom: 2px solid $warning;
+      }
+      &__note {
+        color: $warning;
+      }
+    }
+    .input__flag {
+      color: $warning;
+    }
+  }
+}

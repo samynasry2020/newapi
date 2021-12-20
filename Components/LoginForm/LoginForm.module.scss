@@ -1,0 +1,10 @@
+@import "@/Styles/themes/themes";
+.form {
+  margin: 0 auto;
+  background-color: $grey-lighter;
+  border-radius: $r-md;
+  width: 90%;
+  &__head {
+    text-align: center;
+  }
+}

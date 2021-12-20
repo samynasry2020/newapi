@@ -1,0 +1,6 @@
+@import "../themes/themes.scss";
+.card {
+  border-radius: $r-md;
+  padding: $p-lg;
+  box-shadow: 4px 8px 15px rgba($black, 0.2);
+}

@@ -1,0 +1,45 @@
+@import "@/Styles/themes/themes";
+
+.hero {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($grey-dark, 0.6),
+      rgba($primary, 0.4)
+    ),
+    url(/images/hero/company.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: $p-ms $p-md $p-md;
+  color: $grey-lighter;
+  &__header {
+    grid-column: span 2;
+    font-size: $fs-xl;
+    text-align: center;
+    margin-bottom: $m-lg;
+  }
+  &__main {
+    width: 90%;
+    margin: auto;
+
+    background-image: linear-gradient(
+        to right,
+        rgba($grey-dark, 0.6),
+        rgba($grey, 1)
+      ),
+      url("/images/hero/search.jpg");
+    border-radius: $r-lg;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__search {
+    text-align: cneter;
+    padding: $p-md;
+    position: relative;
+  }
+}
+.search {
+  &__heading {
+    margin-bottom: $m-lg;
+  }
+}

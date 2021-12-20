@@ -1,0 +1,27 @@
+@import "@/Styles/themes/themes";
+.select {
+  color: $grey-lighter;
+  width: 17rem;
+  text-align: center;
+  &__collapse {
+    border-radius: $r-lg;
+    overflow: hidden;
+    transition: box-shadow 0.4s;
+    box-shadow: 3px 12px 20px 1px rgba($black, 0.1);
+    &:hover {
+      box-shadow: unset;
+    }
+  }
+  &__head {
+    transition: background-color 0.4s;
+    background-color: $grey-dark;
+    &:hover {
+      background-color: $grey;
+    }
+  }
+  &__list {
+    background-color: $grey;
+  }
+  &__item {
+  }
+}

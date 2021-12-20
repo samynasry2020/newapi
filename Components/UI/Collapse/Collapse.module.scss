@@ -1,0 +1,31 @@
+@import "@/Styles/themes/themes";
+.collapse {
+  width: 100%;
+  overflow: hidden;
+
+  &__btn {
+    display: block;
+    position: relative;
+    border: none;
+    font-size: inherit;
+    color: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    width: 100%;
+    &::before {
+      content: "\25bc";
+      right: 1rem;
+      top: 1px;
+      float: right;
+      margin-inline-start: $m-sm;
+    }
+    &--active::before {
+      content: "\25b2";
+    }
+  }
+  &__content {
+    width: 100%;
+    transition: all 0.5s;
+    max-height: 0px;
+  }
+}

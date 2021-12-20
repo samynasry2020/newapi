@@ -1,0 +1,21 @@
+@use "@/Styles/themes/themes" as *;
+.header {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  background-color: $grey;
+  color: $grey-lighter;
+  padding: $p-sm $p-md;
+
+  &__logo {
+    position: absolute;
+    width: 5rem;
+    height: 4rem;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
